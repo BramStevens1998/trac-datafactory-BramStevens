@@ -1,0 +1,50 @@
+{
+	"name": "MessierSQLTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "MessierDatabase",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "varchar"
+			},
+			{
+				"name": "LatinName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "EnglishName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FrenchName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Declination",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RightAscention",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Magnitude",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "ImageLink",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MessierCatalog"
+		}
+	}
+}
