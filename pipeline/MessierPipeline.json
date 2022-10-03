@@ -42,7 +42,150 @@
 						"mappings": [
 							{
 								"source": {
-									"path": "$['Column_1']"
+									"path": "['fields']['french_name_nom_francais']"
+								},
+								"sink": {
+									"name": "FrenchName",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "['fields']['latin_name_nom_latin']"
+								},
+								"sink": {
+									"name": "LatinName",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "['fields']['mag']"
+								},
+								"sink": {
+									"name": "Magnitude",
+									"type": "Byte"
+								}
+							},
+							{
+								"source": {
+									"path": "['fields']['messier']"
+								},
+								"sink": {
+									"name": "ID",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "['fields']['english_name_nom_en_anglais']"
+								},
+								"sink": {
+									"name": "EnglishName",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "['fields']['dec']"
+								},
+								"sink": {
+									"name": "Declination",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "['fields']['ra']"
+								},
+								"sink": {
+									"name": "RightAscention",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "['fields']['image_url']['id']"
+								}
+							},
+							{
+								"source": {
+									"path": "['fields']['image_url']['mimetype']"
+								}
+							},
+							{
+								"source": {
+									"path": "['fields']['image_url']['height']"
+								}
+							},
+							{
+								"source": {
+									"path": "['fields']['image_url']['width']"
+								}
+							},
+							{
+								"source": {
+									"path": "['fields']['image_url']['filename']"
+								}
+							},
+							{
+								"source": {
+									"path": "['fields']['image_url']['thumbnail']"
+								}
+							},
+							{
+								"source": {
+									"path": "['fields']['image_url']['format']"
+								}
+							},
+							{
+								"source": {
+									"path": "['fields']['annee']"
+								}
+							},
+							{
+								"source": {
+									"path": "['fields']['image']"
+								}
+							},
+							{
+								"source": {
+									"path": "['record_timestamp']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['nhits']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['parameters']['dataset']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['parameters']['rows']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['parameters']['start']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['parameters']['format']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['parameters']['timezone']"
+								}
+							},
+							{
+								"source": {
+									"path": "['fields']['image_url']['color_summary'][0]"
 								}
 							}
 						],
