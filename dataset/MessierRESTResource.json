@@ -1,6 +1,10 @@
 {
 	"name": "MessierRESTResource",
 	"properties": {
+		"linkedServiceName": {
+			"referenceName": "MessierAPI",
+			"type": "LinkedServiceReference"
+		},
 		"annotations": [],
 		"type": "RestResource",
 		"schema": []
